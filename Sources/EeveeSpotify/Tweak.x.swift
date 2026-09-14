@@ -103,7 +103,7 @@ struct EeveeSpotify: Tweak {
     
     init() {
         // Activate session logout protection first (all versions)
-        SessionLogoutHookGroup().activate()
+        // SessionLogoutHookGroup().activate()
 
         let spotifyVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
         let spotifyBuild = Bundle.main.infoDictionary!["CFBundleVersion"] as? String ?? "?"
